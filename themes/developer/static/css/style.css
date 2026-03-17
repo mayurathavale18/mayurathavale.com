@@ -739,7 +739,7 @@ a.tag:hover {
 
   .nav__menu {
     position: fixed;
-    top: 60px;
+    top: 0;
     left: 0;
     right: 0;
     bottom: 0;
@@ -747,33 +747,33 @@ a.tag:hover {
     align-items: center;
     justify-content: center;
     gap: var(--space-xl);
-    transform: translateX(100%);
-    transition: transform 0.3s ease, opacity 0.3s ease;
     opacity: 0;
-    z-index: 99;
-    background: var(--bg);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border-top: 1px solid var(--border);
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 999;
   }
 
   [data-theme="dark"] .nav__menu {
-    background: rgba(12, 12, 12, 0.97);
+    background: #0c0c0c;
   }
 
   [data-theme="light"] .nav__menu {
-    background: rgba(250, 250, 250, 0.97);
+    background: #fafafa;
   }
 
   .nav__menu.is-open {
-    transform: translateX(0);
     opacity: 1;
+    visibility: visible;
+  }
+
+  .nav__toggle {
+    z-index: 1000;
   }
 
   .nav__link {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 500;
-    padding: var(--space-sm) var(--space-lg);
+    padding: var(--space-sm) var(--space-xl);
     border-radius: var(--radius-sm);
     transition: all var(--transition);
   }
@@ -785,7 +785,7 @@ a.tag:hover {
   }
 
   .theme-toggle {
-    margin-top: var(--space-md);
+    margin-top: var(--space-lg);
     width: 44px;
     height: 44px;
   }
