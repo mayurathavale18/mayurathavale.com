@@ -741,29 +741,27 @@ a.tag:hover {
     position: fixed;
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    height: 100dvh;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: var(--space-xl);
+    background-color: #0c0c0c;
     opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
     z-index: 999;
   }
 
-  [data-theme="dark"] .nav__menu {
-    background: #0c0c0c;
-  }
-
   [data-theme="light"] .nav__menu {
-    background: #fafafa;
+    background-color: #fafafa;
   }
 
   .nav__menu.is-open {
     opacity: 1;
-    visibility: visible;
+    pointer-events: auto;
   }
 
   .nav__toggle {
