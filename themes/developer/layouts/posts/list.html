@@ -1,0 +1,24 @@
+{{ define "main" }}
+<section class="section container">
+  <h1 class="page-title">Blog</h1>
+  {{ .Content }}
+  <div class="posts-list">
+    {{ range .Pages }}
+    <article class="post-card">
+      <div class="post-card__meta">
+        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format $.Site.Params.dateFormat }}</time>
+        {{ with .Params.tags }}
+        <div class="post-card__tags">
+          {{ range first 3 . }}<span class="tag">{{ . }}</span>{{ end }}
+        </div>
+        {{ end }}
+      </div>
+      <h3 class="post-card__title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+      <p class="post-card__excerpt">{{ .Summary | truncate 160 }}</p>
+      <span class="post-card__read-time">{{ math.Round (div (float .WordCount) 200.0) }} min read</span>
+    </article>
+    {{ end }}
+  </div>
+  {{ template "_internal/pagination.html" . }}
+</section>
+{{ end }}

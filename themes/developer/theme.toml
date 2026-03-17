@@ -1,0 +1,8 @@
+name = "Developer"
+license = "MIT"
+licenselink = "https://github.com/mayurathavale18"
+description = "A minimal, dark-first developer portfolio theme for Hugo"
+min_version = "0.100.0"
+
+[author]
+  name = "Mayur Athavale"

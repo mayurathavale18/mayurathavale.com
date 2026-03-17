@@ -1,0 +1,18 @@
+{{ define "main" }}
+<section class="section container">
+  <h1 class="page-title">{{ .Title }}</h1>
+  {{ .Content }}
+  <div class="list">
+    {{ range .Pages }}
+    <article class="list__item">
+      <div class="list__meta">
+        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format $.Site.Params.dateFormat }}</time>
+      </div>
+      <h2 class="list__title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+      {{ with .Description }}<p class="list__desc">{{ . }}</p>{{ end }}
+    </article>
+    {{ end }}
+  </div>
+  {{ template "_internal/pagination.html" . }}
+</section>
+{{ end }}

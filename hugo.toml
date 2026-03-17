@@ -1,0 +1,49 @@
+baseURL = "https://mayurathavale.com/"
+languageCode = "en-us"
+title = "Mayur Athavale"
+theme = "developer"
+paginate = 9
+enableEmoji = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    noClasses = false
+    lineNos = false
+    style = "dracula"
+
+[params]
+  author = "Mayur Athavale"
+  description = "Software Engineer"
+  tagline = "Building production AI systems, platform infrastructure, and developer tools."
+  avatarURL = "/images/avatar.jpg"
+  colorScheme = "auto"
+  copyrightStartYear = 2019
+  resumeURL = "https://drive.google.com/file/d/1bwo0xgkhWC3kqzz2_ISfJ-28OcjWBaet/view?usp=sharing"
+  resumeDownloadURL = "/mayur_athavale_resume.pdf"
+  dateFormat = "Jan 2, 2006"
+
+  [params.social]
+    github = "https://github.com/mayurathavale18"
+    linkedin = "https://www.linkedin.com/in/mayurathavale1729"
+    twitter = "https://x.com/mayatdev1569"
+
+[menu]
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 1
+  [[menu.main]]
+    name = "Projects"
+    url = "/projects/"
+    weight = 2
+  [[menu.main]]
+    name = "Blog"
+    url = "/posts/"
+    weight = 3
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
