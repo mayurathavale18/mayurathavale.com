@@ -743,22 +743,51 @@ a.tag:hover {
     left: 0;
     right: 0;
     bottom: 0;
-    background: var(--bg);
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: var(--space-xl);
     transform: translateX(100%);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
     z-index: 99;
+    background: var(--bg);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-top: 1px solid var(--border);
+  }
+
+  [data-theme="dark"] .nav__menu {
+    background: rgba(12, 12, 12, 0.97);
+  }
+
+  [data-theme="light"] .nav__menu {
+    background: rgba(250, 250, 250, 0.97);
   }
 
   .nav__menu.is-open {
     transform: translateX(0);
+    opacity: 1;
   }
 
   .nav__link {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding: var(--space-sm) var(--space-lg);
+    border-radius: var(--radius-sm);
+    transition: all var(--transition);
+  }
+
+  .nav__link:hover,
+  .nav__link--active {
+    background: var(--accent-dim);
+    color: var(--accent);
+  }
+
+  .theme-toggle {
+    margin-top: var(--space-md);
+    width: 44px;
+    height: 44px;
   }
 
   .hero {
