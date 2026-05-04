@@ -1,24 +1,7 @@
-<style>
-  .nav__brand-logo {
-    display: flex;
-    align-items: center;
-  }
-  .nav__brand-logo img {
-    height: 24px;
-    width: auto;
-  }
-  /* specificity: class+element (0,1,1) beats bare class (0,1,0) — prevents cascade conflicts */
-  .nav__brand-logo img.logo--ink  { display: block; }
-  .nav__brand-logo img.logo--phos { display: none;  }
-  [data-theme="dark"] .nav__brand-logo img.logo--ink  { display: none;  }
-  [data-theme="dark"] .nav__brand-logo img.logo--phos { display: block; }
-</style>
-
 <header class="header">
   <nav class="nav container">
     <a href="/" class="nav__brand nav__brand-wordmark" aria-label="{{ .Site.Title }}">
-      <img src="/images/logos/stack-ink.png"  class="logo--ink"  alt="" aria-hidden="true" loading="eager">
-      <img src="/images/logos/stack-phos.png" class="logo--phos" alt="" aria-hidden="true" loading="eager">
+      <img src="/images/logos/stack-phos.png" alt="" aria-hidden="true" loading="eager">
       <span class="wordmark-name">{{ .Site.Params.author | lower }}</span>
     </a>
     <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false">

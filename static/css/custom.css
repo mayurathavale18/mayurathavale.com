@@ -63,6 +63,7 @@
 .nav__brand-wordmark img {
   height: 20px;
   width: auto;
+  display: block;
 }
 .wordmark-name {
   font-family: 'JetBrains Mono', monospace;
