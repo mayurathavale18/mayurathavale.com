@@ -3,7 +3,9 @@
   <div class="hero__content">
     {{ if .Site.Params.avatarURL }}
     <div class="hero__avatar-wrapper">
-      <img src="{{ .Site.Params.avatarURL }}" alt="{{ .Site.Params.author }}" class="hero__avatar" loading="eager">
+      <div class="hero__avatar-clip">
+        <img src="{{ .Site.Params.avatarURL }}" alt="{{ .Site.Params.author }}" class="hero__avatar" loading="eager">
+      </div>
     </div>
     {{ end }}
     <p class="hero__greeting">Hi, I'm</p>

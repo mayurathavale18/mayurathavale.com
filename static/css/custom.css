@@ -1,0 +1,73 @@
+/* ── Avatar clip fix ──────────────────────────────────────────────────────────
+   The source image has a pre-baked circular crop with black background corners
+   (up to ~80px / 6.4% border). The clip container handles the shape and border;
+   the img is scaled to 115% so those black edges are pushed outside the overflow
+   clip. Works for both the hero circle and the about rounded-rect. */
+
+.hero__avatar-clip {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid var(--border);
+  transition: border-color var(--transition), transform 0.3s ease;
+  flex-shrink: 0;
+}
+.hero__avatar-clip:hover {
+  border-color: var(--accent);
+  transform: scale(1.03);
+}
+/* Override theme styles that are now on the container */
+.hero__avatar-clip .hero__avatar {
+  width: 115%;
+  height: 115%;
+  margin: -7.5%;
+  object-fit: cover;
+  border-radius: 0;
+  border: none;
+  transform: none;
+  transition: none;
+  display: block;
+}
+
+.about-hero__avatar-clip {
+  width: 120px;
+  height: 120px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 2px solid var(--border);
+  transition: border-color var(--transition);
+  flex-shrink: 0;
+}
+.about-hero__avatar-clip:hover {
+  border-color: var(--accent);
+}
+.about-hero__avatar-clip .about-hero__avatar {
+  width: 115%;
+  height: 115%;
+  margin: -7.5%;
+  object-fit: cover;
+  border-radius: 0;
+  border: none;
+  display: block;
+}
+
+/* ── Nav wordmark ─────────────────────────────────────────────────────────────
+   Mark image + name in JetBrains Mono, matching the Figma horizontal lockup. */
+
+.nav__brand-wordmark {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.nav__brand-wordmark img {
+  height: 20px;
+  width: auto;
+}
+.wordmark-name {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  color: var(--text);
+}

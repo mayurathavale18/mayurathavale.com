@@ -4,7 +4,9 @@
   <div class="about-hero">
     <div class="about-hero__visual">
       {{ if .Site.Params.avatarURL }}
-      <img src="{{ .Site.Params.avatarURL }}" alt="{{ .Site.Params.author }}" class="about-hero__avatar" loading="eager">
+      <div class="about-hero__avatar-clip">
+        <img src="{{ .Site.Params.avatarURL }}" alt="{{ .Site.Params.author }}" class="about-hero__avatar" loading="eager">
+      </div>
       {{ end }}
       <div class="about-hero__status">
         <span class="about-hero__dot"></span>

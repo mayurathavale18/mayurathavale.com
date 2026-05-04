@@ -6,20 +6,20 @@
   .nav__brand-logo img {
     height: 24px;
     width: auto;
-    display: block;
   }
-  /* ink (dark marks) shown in light mode, hidden in dark */
-  .logo--ink  { display: block; }
-  .logo--phos { display: none;  }
-  [data-theme="dark"] .logo--ink  { display: none;  }
-  [data-theme="dark"] .logo--phos { display: block; }
+  /* specificity: class+element (0,1,1) beats bare class (0,1,0) — prevents cascade conflicts */
+  .nav__brand-logo img.logo--ink  { display: block; }
+  .nav__brand-logo img.logo--phos { display: none;  }
+  [data-theme="dark"] .nav__brand-logo img.logo--ink  { display: none;  }
+  [data-theme="dark"] .nav__brand-logo img.logo--phos { display: block; }
 </style>
 
 <header class="header">
   <nav class="nav container">
-    <a href="/" class="nav__brand nav__brand-logo" aria-label="{{ .Site.Title }}">
-      <img src="/images/logos/stack-ink.png"  class="logo--ink"  alt="{{ .Site.Title }}" loading="eager">
-      <img src="/images/logos/stack-phos.png" class="logo--phos" alt="{{ .Site.Title }}" loading="eager">
+    <a href="/" class="nav__brand nav__brand-wordmark" aria-label="{{ .Site.Title }}">
+      <img src="/images/logos/stack-ink.png"  class="logo--ink"  alt="" aria-hidden="true" loading="eager">
+      <img src="/images/logos/stack-phos.png" class="logo--phos" alt="" aria-hidden="true" loading="eager">
+      <span class="wordmark-name">{{ .Site.Params.author | lower }}</span>
     </a>
     <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false">
       <span class="nav__toggle-bar"></span>
