@@ -21,7 +21,7 @@ enableEmoji = true
   avatarURL = "/images/avatar.jpg"
   colorScheme = "auto"
   copyrightStartYear = 2019
-  resumeURL = "https://drive.google.com/file/d/1UfNGY5tt0lY3Lxsvp3T9nPx7gPY-gQlD/view?usp=sharing"
+  resumeURL = "https://drive.google.com/file/d/1vDBSE3cvIogaEWI488eEniHEQgqP1doc/view?usp=drive_link"
   resumeDownloadURL = "/mayur_athavale_resume.pdf"
   dateFormat = "Jan 2, 2006"
 
