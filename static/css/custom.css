@@ -72,3 +72,96 @@
   letter-spacing: 0.01em;
   color: var(--text);
 }
+
+/* ── Contact form ─────────────────────────────────────────────────────────── */
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+  max-width: 480px;
+}
+
+.contact-form__honeypot {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.form-group label {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.form-optional {
+  font-weight: 400;
+  color: var(--text-tertiary);
+}
+
+.form-input {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: var(--text);
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: var(--space-sm) var(--space-md);
+  transition: border-color var(--transition), background var(--transition);
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--accent);
+  background: var(--bg-surface-hover);
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 120px;
+  font-family: var(--font-body);
+}
+
+.form-submit {
+  align-self: flex-start;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #fff;
+  background: var(--accent);
+  border: none;
+  border-radius: var(--radius-sm);
+  padding: var(--space-sm) var(--space-xl);
+  cursor: pointer;
+  transition: background var(--transition), transform var(--transition);
+}
+
+.form-submit:hover:not(:disabled) {
+  background: var(--accent-hover);
+}
+
+.form-submit:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.form-status {
+  font-size: 0.85rem;
+  min-height: 1.2em;
+}
+
+.form-status--success {
+  color: #22c55e;
+}
+
+.form-status--error {
+  color: #ef4444;
+}

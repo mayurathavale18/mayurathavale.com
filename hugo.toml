@@ -24,6 +24,14 @@ enableEmoji = true
   resumeURL = "https://drive.google.com/file/d/1X3HVqaORFsgebKymzkStPdrApyKqFAms/view?usp=drive_link"
   resumeDownloadURL = "/mayur_athavale_resume.pdf"
   dateFormat = "Jan 2, 2006"
+  # Free instant access key from https://web3forms.com (just an email,
+  # no domain verification, no account dashboard needed) -- the contact
+  # form posts directly to Web3Forms' API with this key and they forward
+  # submissions to your email. Replace before the form will actually work.
+  web3formsAccessKey = "611216bc-e374-456c-8dc9-b6e0df115d7c"
+
+  [params.contact]
+    email = "mayat.dev1569@gmail.com"
 
   [params.social]
     github = "https://github.com/mayurathavale18"
@@ -43,6 +51,10 @@ enableEmoji = true
     name = "Blog"
     url = "/posts/"
     weight = 3
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 4
 
 [taxonomies]
   tag = "tags"
