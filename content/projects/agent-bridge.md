@@ -18,6 +18,18 @@ Codex and Claude Code use the same channel and configuration dashboard; the
 the same gateway through its own adapter. Only one webhook receives new turns.
 Each harness retains its own history.
 
+Control the bridge directly from the self-chat: `@me /models` lists the active
+harness's catalog, `/model <id>` verifies a model before applying it, and
+`/harness <id>` verifies and switches adapters. Named threads use `/new <name>`,
+`/threads` and `/use <name>`; each harness keeps its own thread history.
+
+Images and documents can be attached with an `@me` caption. Use `/send <path>`
+to retrieve a workspace file. Private context can include selected ChatGPT,
+Claude and CLI transcript exports, while clarification options use numbered
+text replies where a harness exposes a reply transport. See the
+[chat controls guide](https://github.com/mayurathavale18/agent-bridge/blob/main/docs/chat-controls.md)
+for supported transports and limits.
+
 Codex starts in a read-only sandbox, and Claude Code starts in plan mode with
 unanswered permission requests denied. Command Code also supports tool approvals
 through WhatsApp. The new adapters have been checked with real model replies and
