@@ -8,13 +8,15 @@ layout: "single"
 <div class="about-section">
 <h2 class="about-section__title">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-Who I Am
+What I Do
 </h2>
 <div class="about-section__body">
 
-Software Engineer with 1+ year building production AI and platform systems at a startup. I work with TypeScript, Python, Go, and AWS. Architected a production RAG copilot with LangGraph (hybrid search, multi-model, streaming APIs) deployed on AWS ECS — drove 200%+ lead growth and 100+ ICP customers. Built multi-tenant GraphQL APIs, offline-first systems, and Terraform-managed cloud infrastructure.
+I build AI agents and the backend systems they depend on. At Zotok.ai, I took an AI copilot from proof of concept to production. It serves 5k+ daily active users and handles 100k+ conversations a day.
 
-I also explore VPN tunnels, build CLI tools, and configure SSH across my devices.
+My work covers retrieval, agent orchestration and streaming, along with multi-tenant APIs, scheduled workflows and model usage tracking. I write mostly Python, TypeScript and Go, and handle deployment and operations with AWS, Terraform and Docker.
+
+Outside work, I build tools for workflows I use myself: Agent Bridge and Hermes Plugin connect agents to WhatsApp, while Jobwatch helps me find roles and prepare applications. I self-host these projects on my k3s cluster and write about what I learn.
 
 </div>
 </div>
