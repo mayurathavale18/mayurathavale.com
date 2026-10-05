@@ -13,7 +13,7 @@ I was always fascinated by the fact that using a simple command like `ssh host@i
 
 So I went on and edited the ssh configs on my android using [termux](https://github.com/termux/termux-app), with my hostname as my target device's username and vice versa, and I kept accessing my devices for either executing some quick commands like merging a PR or running a workflow or transferring resources quickly over ssh with either scp (the old way) or rsync (the rsync way).
 
-But here was the catch: With this approach, there were a couple of changes I frequently had to manually make and ensure certain conditions are met:
+This approach required two things:
 
 1. Make sure that both of my devices are on the same network.
 2. Keep updating host IP from the network in the `.ssh/config` on both of my devices (because I usually had to connect both ways).
