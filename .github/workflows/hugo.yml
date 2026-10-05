@@ -30,6 +30,8 @@ jobs:
           && sudo dpkg -i ${{ runner.temp }}/hugo.deb
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
@@ -43,7 +45,9 @@ jobs:
             --gc \
             --minify \
             --baseURL "https://mayurathavale.com/"
-      - name: Upload artifact
+      - name: Check generated site
+        run: python3 scripts/check-site.py
+      - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./public

@@ -1,5 +1,6 @@
 ---
 title: "About"
+description: "Mayur Athavale's software engineering experience at Zotok.ai and Gramoday, technical skills, open-source projects and COEP education."
 type: "about"
 layout: "single"
 ---

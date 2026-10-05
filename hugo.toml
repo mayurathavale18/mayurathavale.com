@@ -4,6 +4,7 @@ title = "Mayur Athavale"
 theme = "developer"
 paginate = 9
 enableEmoji = true
+enableGitInfo = true
 
 [markup]
   [markup.goldmark]
@@ -61,3 +62,11 @@ enableEmoji = true
 [taxonomies]
   tag = "tags"
   category = "categories"
+
+[frontmatter]
+  lastmod = [":git", "lastmod", "date"]
+
+[[menu.main]]
+  name = "AI Profile"
+  url = "/for-ai/"
+  weight = 5

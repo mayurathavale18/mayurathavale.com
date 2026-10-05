@@ -37,32 +37,6 @@
   </div>
 </section>
 
-{{ $posts := where .Site.RegularPages "Section" "posts" }}
-{{ if $posts }}
-<section class="section container">
-  <div class="section__header">
-    <h2 class="section__title">Latest Posts</h2>
-    <a href="/posts/" class="section__link">View all &rarr;</a>
-  </div>
-  <div class="posts-grid">
-    {{ range first 3 $posts }}
-    <article class="post-card">
-      <div class="post-card__meta">
-        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format $.Site.Params.dateFormat }}</time>
-        {{ with .Params.tags }}
-        <div class="post-card__tags">
-          {{ range first 2 . }}<span class="tag">{{ . }}</span>{{ end }}
-        </div>
-        {{ end }}
-      </div>
-      <h3 class="post-card__title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
-      <p class="post-card__excerpt">{{ .Summary | truncate 120 }}</p>
-    </article>
-    {{ end }}
-  </div>
-</section>
-{{ end }}
-
 {{ $projects := where .Site.RegularPages "Section" "projects" }}
 {{ if $projects }}
 <section class="section container">
@@ -94,4 +68,31 @@
   </div>
 </section>
 {{ end }}
+
+{{ $posts := where .Site.RegularPages "Section" "posts" }}
+{{ if $posts }}
+<section class="section container">
+  <div class="section__header">
+    <h2 class="section__title">Latest Posts</h2>
+    <a href="/posts/" class="section__link">View all &rarr;</a>
+  </div>
+  <div class="posts-grid">
+    {{ range first 3 $posts }}
+    <article class="post-card">
+      <div class="post-card__meta">
+        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format $.Site.Params.dateFormat }}</time>
+        {{ with .Params.tags }}
+        <div class="post-card__tags">
+          {{ range first 2 . }}<span class="tag">{{ . }}</span>{{ end }}
+        </div>
+        {{ end }}
+      </div>
+      <h3 class="post-card__title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+      <p class="post-card__excerpt">{{ .Summary | truncate 120 }}</p>
+    </article>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
+
 {{ end }}
