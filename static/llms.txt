@@ -1,0 +1,32 @@
+# Mayur Athavale
+
+> Software engineer building production AI systems, backend platforms and developer tools with TypeScript, Python, Go and AWS.
+
+This is a first-party index of Mayur Athavale's public professional information.
+Experience and metrics are self-reported; linked code is evidence of implementation,
+not independent verification of employment or business outcomes.
+
+## Profile
+
+- [Profile for recruiters and AI assistants](https://mayurathavale.com/for-ai/): Identity, experience, technical focus, education, contact and source links.
+- [About](https://mayurathavale.com/about/): Full public experience and skills.
+- [Resume](https://mayurathavale.com/resume): Redirects to the existing Google Drive PDF viewer.
+- [Contact](https://mayurathavale.com/contact/): Contact page; email mayat.dev1569@gmail.com.
+
+## Projects
+
+- [Agent Bridge](https://mayurathavale.com/projects/agent-bridge/): WhatsApp transport for coding agents; source https://github.com/mayurathavale18/agent-bridge.
+- [Jobwatch](https://mayurathavale.com/projects/jobwatch/): Go/Python/React job-search pipeline, SQLite queue and k3s architecture; source https://github.com/mayurathavale18/jobwatch.
+- [Hermes Plugin](https://mayurathavale.com/projects/hermes-plugin/): Hermes Agent integration with an existing OpenWA session; source https://github.com/mayurathavale18/hermes-openwa.
+- [SSH TUI Portfolio](https://mayurathavale.com/projects/ssh-tui-portfolio/): Go terminal portfolio; source https://github.com/mayurathavale18/mayur-athvale-ssh-tui.
+
+## Writing and professional profiles
+
+- [Articles](https://mayurathavale.com/posts/): Technical writing on this site.
+- [Medium](https://mayatdev1569.medium.com): Technical articles.
+- [GitHub](https://github.com/mayurathavale18): Public repositories.
+- [LinkedIn](https://www.linkedin.com/in/mayurathavale1729): Professional profile.
+
+## Optional
+
+- [Sitemap](https://mayurathavale.com/sitemap.xml): Canonical public HTML URLs.

@@ -1,0 +1,8 @@
+# Public portfolio pages and assets are available to search and AI crawlers.
+User-agent: *
+Allow: /
+
+Sitemap: https://mayurathavale.com/sitemap.xml
+
+# Factual profile: https://mayurathavale.com/for-ai/
+# Markdown index: https://mayurathavale.com/llms.txt

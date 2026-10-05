@@ -34,3 +34,11 @@
 
 <!-- Canonical -->
 <link rel="canonical" href="{{ .Permalink }}">
+
+<link rel="alternate" type="text/markdown" href="/llms.txt" title="Public profile source index">
+{{ if or .IsHome (in (slice "/about/" "/for-ai/") .RelPermalink) }}
+{{ $person := dict "@type" "Person" "@id" ("#mayur-athavale" | absURL) "name" .Site.Params.author "url" .Site.BaseURL "jobTitle" "Software Engineer" "image" (.Site.Params.avatarURL | absURL) "sameAs" (slice .Site.Params.social.github .Site.Params.social.linkedin .Site.Params.social.medium .Site.Params.social.twitter) }}
+{{ $schema := dict "@context" "https://schema.org" "@type" "ProfilePage" "url" .Permalink "mainEntity" $person }}
+{{ if .IsHome }}{{ $schema = dict "@context" "https://schema.org" "@type" "WebSite" "url" .Permalink "name" .Site.Title "author" $person }}{{ end }}
+<script type="application/ld+json">{{ $schema | jsonify | safeJS }}</script>
+{{ end }}
