@@ -30,6 +30,12 @@
           LinkedIn
         </a>
         {{ end }}
+        {{ with .Site.Params.social.medium }}
+        <a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="about-hero__link" aria-label="Medium">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><ellipse cx="6" cy="12" rx="5" ry="6"/><ellipse cx="16" cy="12" rx="2.5" ry="6"/><ellipse cx="22" cy="12" rx="1" ry="6"/></svg>
+          Medium
+        </a>
+        {{ end }}
         {{ with .Site.Params.social.twitter }}
         <a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="about-hero__link">
           <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
@@ -43,7 +49,7 @@
         </a>
         {{ end }}
         {{ with .Site.Params.resumeDownloadURL }}
-        <a href="{{ . }}" download class="about-hero__link about-hero__link--download">
+        <a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="about-hero__link about-hero__link--download">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
           Download Resume
         </a>

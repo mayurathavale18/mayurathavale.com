@@ -1,5 +1,6 @@
 ---
 title: "Jobwatch"
+weight: 2
 date: 2026-10-06T00:00:00+05:30
 description: "My self-hosted job-search tool: Go polls job boards, Python generates tailored resumes and scores role fit, and a React dashboard and Telegram share a SQLite event queue."
 tags: ["Go", "Python", "React", "SQLite", "LLM", "k3s"]

@@ -1,8 +1,8 @@
 # Publish the master resume once
 
-Canonical PDF: https://mayurathavale.com/mayur_athavale_resume.pdf
+Public resume URL: https://mayurathavale.com/resume
 
-Both website buttons and the SSH portfolio use this URL. Hugo serves `static/mayur_athavale_resume.pdf`; the root copy is maintained alongside it. Pushing main triggers Pages. The TUI needs no link change or restart.
+The website viewer button and SSH portfolio use `/resume`, a GitHub Pages redirect page that opens the existing Drive viewer. The download button uses Drive’s download URL. The hosted PDF at `/mayur_athavale_resume.pdf` remains the source for the optional Drive-sync script below. Pushing main triggers Pages.
 
 ## Publish an approved PDF
 
@@ -34,6 +34,6 @@ Official references: [Advanced Drive service](https://developers.google.com/apps
 
 ## Routine flow
 
-Edit/compile in Overleaf -> inspect/download PDF -> run publisher -> Pages updates website and TUI-linked PDF -> configured Apps Script updates the same Drive file.
+Edit/compile in Overleaf -> inspect/download PDF -> run publisher -> Pages updates the hosted PDF -> configured Apps Script updates the same Drive file -> `/resume` opens that Drive file.
 
 Job portals keep their own uploads. Jobwatch's tailored application resumes remain separate from this public master.

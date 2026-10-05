@@ -3,7 +3,7 @@
   <h1 class="page-title">Projects</h1>
   {{ .Content }}
   <div class="projects-grid">
-    {{ range .Pages }}
+    {{ range .Pages.ByWeight }}
     <article class="project-card">
       <h3 class="project-card__title">
         {{ if .Params.externalLink }}
