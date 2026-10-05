@@ -18,6 +18,8 @@ My work covers retrieval, agent orchestration and streaming, along with multi-te
 
 Outside work, I build tools for workflows I use myself: Agent Bridge and Hermes Plugin connect agents to WhatsApp, while Jobwatch helps me find roles and prepare applications. I self-host these projects on my k3s cluster and write about what I learn.
 
+I'm curious about the layers beneath the tools I use: low-level systems, compilers, and the origins of programming languages. I like understanding how code becomes something a machine can run, and why languages work the way they do.
+
 </div>
 </div>
 
