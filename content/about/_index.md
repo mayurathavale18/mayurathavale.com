@@ -11,9 +11,9 @@ Who I Am
 </h2>
 <div class="about-section__body">
 
-Software Engineer with 1+ year building production AI and platform systems at a startup. Strong in TypeScript, Python, Go, and AWS. Architected a production RAG copilot with LangGraph (hybrid search, multi-model, streaming APIs) deployed on AWS ECS — drove 200%+ lead growth and 100+ ICP customers. Built multi-tenant GraphQL APIs, offline-first systems, and Terraform-managed cloud infrastructure.
+Software Engineer with 1+ year building production AI and platform systems at a startup. I work with TypeScript, Python, Go, and AWS. Architected a production RAG copilot with LangGraph (hybrid search, multi-model, streaming APIs) deployed on AWS ECS — drove 200%+ lead growth and 100+ ICP customers. Built multi-tenant GraphQL APIs, offline-first systems, and Terraform-managed cloud infrastructure.
 
-When I'm not shipping features, you'll find me exploring VPN tunnels, building CLI tools, or tinkering with SSH configurations across my devices.
+I also explore VPN tunnels, build CLI tools, and configure SSH across my devices.
 
 </div>
 </div>
@@ -185,14 +185,14 @@ What I Write About
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
 </div>
 <h3>Networking & SSH</h3>
-<p>VPN tunnels, remote access, WireGuard, and everything about secure connections.</p>
+<p>VPN tunnels, remote access, WireGuard, and secure connections.</p>
 </div>
 <div class="interest-card">
 <div class="interest-card__icon">
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
 </div>
 <h3>Developer Tools</h3>
-<p>CLI tools, automation scripts, and workflows that make development more efficient.</p>
+<p>CLI tools, automation scripts, and development workflows.</p>
 </div>
 <div class="interest-card">
 <div class="interest-card__icon">
