@@ -21,11 +21,9 @@ enableEmoji = true
   avatarURL = "/images/avatar.jpg"
   colorScheme = "auto"
   copyrightStartYear = 2019
-  # Both point at the same hosted PDF now -- no more Google Drive copy to
-  # keep in sync by hand. "View" opens it in-browser, "Download" (the
-  # <a download> attribute in the template) forces a save.
-  resumeURL = "/mayur_athavale_resume.pdf"
-  resumeDownloadURL = "/mayur_athavale_resume.pdf"
+  # Stable viewer URL redirects to the existing Drive file.
+  resumeURL = "/resume"
+  resumeDownloadURL = "https://drive.google.com/uc?export=download&id=1xBZrOwoQ__H34YFiSfwYG16gFu6iQAQo"
   dateFormat = "Jan 2, 2006"
   # Free instant access key from https://web3forms.com (just an email,
   # no domain verification, no account dashboard needed) -- the contact
@@ -39,6 +37,7 @@ enableEmoji = true
   [params.social]
     github = "https://github.com/mayurathavale18"
     linkedin = "https://www.linkedin.com/in/mayurathavale1729"
+    medium = "https://mayatdev1569.medium.com"
     twitter = "https://x.com/mayatdev1569"
 
 [menu]

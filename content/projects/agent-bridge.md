@@ -1,5 +1,6 @@
 ---
 title: "Agent Bridge"
+weight: 1
 date: 2026-10-02T00:00:00+05:30
 description: "An open-source bridge for driving Command Code, Codex and Claude Code from WhatsApp, with a shared event contract, session resume and native permission controls."
 tags: ["TypeScript", "AI Agents", "WhatsApp", "Open Source", "Kubernetes"]
